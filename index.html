@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <title>Dødskalkulator</title>
+</head>
+<body>
+    <header>
+        <h1>DØDSKALKULATOR</h1>
+        <P>Regn ut når du dør....</P>
+    </header>
+    <section id="data-input">
+        <form id="personal-data" action="post" name="personal-data">
+
+            <label for="fodselsdato">Din fodselsdato</label>
+            <input name="fodselsdato" id="fodselsdato" type="date" placeholder="ddmmyy" required/>
+
+            <label for="kjonn">Skriv inn det tallet som beskriver ditt kjønn best!</label>
+            <input name="kjonn" id="kjonn" type="number" placeholder="velg et tall i spektrumet!" required/>
+
+            <label for="mmorace">Din favorittrase i MMO</label>
+            <select name="mmorace" id="mmorace" required>
+                <option value=0>None</option>
+                <option value=1>Orc</option>
+                <option value=2>Elf</option>
+                <option value=3>Tauren</option>
+                <option value=4>Dwarf</option>
+                <option value=5>Troll</option>
+                <option value=6>Gnome</option>
+            </select>
+
+            <label for="trening">Antall treningsøkter per uke</label>
+            <input name="trening" id="trening" type="number" placeholder="0" required>
+
+            <label for="geirRetting">Hvor ofte har du rettet på Geir sin kode?</label>
+            <input name="geirretting" id="geirRetting" type="number" placeholder="0">
+
+            <label for="mctjukkas">Hvor mange ganger spiser du junkfood per måned?</label>
+            <input name="mctjukkas" id="mctjukkas" type="number" placeholder="0" required/>
+
+            <span class="checkbox"><label for="breakfast" >Spiser frokost hver dag?<input name="breakfast" id="breakfast" type="checkbox"></label></span>
+            <span class="checkbox"><label for="gamer">Spiller du i skoletimer? <input name="gamer" id="gamer" type="checkbox"></label></span>
+            
+            <label for="sjaffor">Jeg er oftest passasjer med...</label>
+            <select name="sjaffor" id="sjaffor" required>
+                <option value=0>Kvinne bak rattet</option>
+                <option value=1>Mann bak rattet</option>
+            </select>
+            <button type="submit">Calculate Remaining Lifetime...</button>
+        </form>
+        <section id="deathTimer" class="hidden timer">
+            <h1 id="deathdate"></h1><br>
+            <h2 id="years"></h2><br>
+            <h2 id="days"></h2><br>
+            <h2 id="timer"></h2>
+            <img src="./img/skull.svg" alt="skull">
+        </section>
+    </section>
+    
+</body>
+</html>

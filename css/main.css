@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+}
+
+label {
+    width: 49%;
+    display: inline-block;
+    color: white;
+}
+input,
+select {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+input:focus,
+select:focus{
+    outline-width: 4px;
+    outline-color: rgb(221, 0, 0);
+}
+
+#data-input {
+    border-style: solid;
+    border-color: aliceblue;
+    padding: 1ch;
+    min-width: 50ch;
+    max-width: 85ch;
+    margin: 0 auto;
+}
+
+html{
+    color: white;
+    font-size: 1.3em;
+}
+
+header {
+    text-align: center;
+}
+
+form {
+    line-height: 1.5;
+}
+form button {
+    align-items: center;
+    margin-top: 2em;
+    width: 100%;
+}
+
+#deathTimer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+#deathTimer h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#daysToLive {
+    display: block;
+}
