@@ -1,4 +1,8 @@
 
+
+
+
+
 /**
  * @param {String} fodselsdato format: ddmmyy
  * @param {boolean} isKvinne //how you identify, hvis du er ikke binær, bruk det tallet som du synes beskriver kjønnet ditt best
@@ -40,7 +44,7 @@ function calculateAge(
 
     //Complete the formulae
     //You are supposed to calculate time and date of death, down to the minute!
-    function calculateExactTimeOfDeath(
+    export function calculateExactTimeOfDeath(
         fodselsdato, isKvinne, wowRace, antallGangerRettetGeirSinProg,
         treningPerUke, McTjukkasPerManed,  
         hasFrokostForSkole, hasDrivingFemalePartner, hasMaleDrivingPartner,
@@ -50,7 +54,6 @@ function calculateAge(
             hasFrokostForSkole, hasDrivingFemalePartner, hasMaleDrivingPartner,
             isSpillerItimen);
 
-
-
-        return null;//f
+        return achievedAge - (new Date().getFullYear()- fodselsdato.getFullYear()) 
     }
+
